@@ -1,0 +1,189 @@
+.carousel {
+    overflow: hidden;
+    width: 100%;
+    min-height: 500px; /* Altere para altura automática */
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: relative;
+}
+
+.slide img {
+    width: 100%; /* Definindo a largura da imagem como 100% do seu contêiner */
+    height: auto; /* A altura será ajustada automaticamente para manter a proporção */
+}
+
+.carousel:hover {
+    cursor: pointer;
+}
+
+.slide:first-child {
+    display: block;
+}
+
+.carousel:hover .slide {
+    background-color: rgba(255, 0, 0, 1); /* Adiciona uma sobreposição semi-transparente quando o mouse está sobre o carrossel */
+}
+
+body {
+    background-image: url('imgs/pages/bg_1.png');
+    background-size: cover; /* Para cobrir toda a área do corpo */
+    background-position: center; /* Para centralizar a imagem */
+    background-repeat: no-repeat; /* Para não repetir a imagem */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+cabecalho {
+    font-family: "Bookman Old Style", serif;
+    color: #ffffff;
+    background-color: #000000;
+    height: 44px;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+}
+
+cabecalho div {
+    flex: 1;
+}
+
+.left {
+    font-size: 12px;
+    align-items: center;
+    text-align: left; /* Alinhar conteúdo à esquerda */
+    margin-left: 20px; /* Adicionando espaçamento na margem esquerda */
+}
+
+.right {
+    font-size: 14px;
+    align-items: center;
+    text-align: right; /* Alinhar conteúdo à direita */
+    margin-right: 20px; /* Adicionando espaçamento na margem direita */
+}
+
+.icons {
+    max-width: 20px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px; /* Adicionando espaçamento entre os ícones */
+    margin-left: 10px; /* Adicionando espaçamento entre os ícones */
+}
+
+.container {
+    background-image: url('imgs/pages/bg_2.png');
+    background-size: cover; /* Para cobrir toda a área do corpo */
+    background-position: center; /* Para centralizar a imagem */
+    background-repeat: no-repeat; /* Para não repetir a imagem */
+    width: 60%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.parceiros {
+    background-image: url('imgs/pages/bg_2.png');
+    background-size: cover; /* Para cobrir toda a área do corpo */
+    background-position: center; /* Para centralizar a imagem */
+    background-repeat: no-repeat; /* Para não repetir a imagem */
+    width: 60%;
+    margin: 10px auto; /* Centraliza o container horizontalmente */
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza os itens verticalmente */
+    padding: 10px; /* Adiciona padding para criar a diferença de 10px */
+    position: relative; /* Adiciona posição relativa para os filhos posicionarem-se relativamente a este elemento */
+    z-index: 0;
+}
+
+.parc {
+    width: 150px;
+    height: auto;
+    margin: 0 60px; /* Adiciona espaçamento entre os logos */
+}
+
+.bg_parceiros {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; /* Centraliza o elemento horizontalmente e verticalmente */
+    width: calc(100% - 20px); /* 100% da largura menos 20px (10px de cada lado) */
+    height: calc(100% - 20px); /* 100% da altura menos 20px (10px de cada lado) */
+    z-index: 1;
+}
+
+.logos {
+    position: relative; /* Garante que os logos fiquem na frente da imagem de fundo */
+    z-index: 2; /* Garante que os logos fiquem na frente da imagem de fundo */
+}
+
+.bg_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Redimensiona a imagem de fundo para preencher o contêiner */
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+}
+
+p {
+    color: #000000;
+}
+
+a {
+    color: inherit; /* Define a cor do link como a cor herdada de seu pai */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+/* Estilizando os botões prev e next */
+#prevButton,
+#nextButton {
+    background-color: #333; /* Cor de fundo dos botões */
+    color: #fff; /* Cor do texto dos botões */
+    border: none; /* Remova a borda dos botões */
+    border-radius: 5px; /* Adicione bordas arredondadas aos botões */
+    padding: 10px 20px; /* Adicione preenchimento interno aos botões */
+    font-size: 4px; /* Tamanho da fonte dos botões */
+    cursor: pointer; /* Altera o cursor ao passar o mouse sobre os botões */
+}
+
+/* Estilizando os botões prev e next quando o mouse passa sobre eles */
+#prevButton:hover,
+#nextButton:hover {
+    background-color: #555; /* Altera a cor de fundo quando o mouse passa sobre os botões */
+}
+
+
+rodape {
+    font-family: "Bookman Old Style", serif;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #000000;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    line-height: 20px;
+    margin-top: auto;
+    justify-content: center;
+}
